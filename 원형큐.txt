@@ -1,0 +1,21 @@
+<<선형큐
+
+초기에 front와 rear는 -1을 가르킴
+
+<<원형큐
+항상 front는 비어있어야 함
+
+* Enqueue 명령시(data삽입시) FULL인지 확인하는 절차 필요
+   (r+1) % MAX_SIZE = f 이면 값을 넣을 수 없음 (Queue FULL 발생)
+-queue overflow
+* Dequeue 명령시(data제거) (f==r)이면 (Queue EMPTY 발생)
+
+-queue underflow
+공백상태 : front == rear
+포화상태 : front % M == (rear+1)%M
+공백상태와 포화상태를 구별하기 위해 하나의 공간은 항상 비워둠
+
+full?
+head=0이고 tail=size인 상태.(head_front==tail_rear%size)
+underflow?
+front==rear
