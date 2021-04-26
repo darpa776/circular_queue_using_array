@@ -13,3 +13,5 @@
    
 * Dequeue 명령시(data제거시) EMPTY인지 확인하는 절차 필요   
    front==rear이면 더 이상 지울 수 없음 (Queue EMPTY 발생) : queue underflow
+
+<img width="259" alt="배열로 구현한 원형큐" src="https://user-images.githubusercontent.com/29969646/116019681-b99c0780-a67f-11eb-95a2-950b907e1c00.png">
