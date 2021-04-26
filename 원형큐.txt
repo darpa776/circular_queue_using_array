@@ -1,21 +1,16 @@
-<<¼±ÇüÅ¥
+<<ì„ í˜•í
 
-ÃÊ±â¿¡ front¿Í rear´Â -1À» °¡¸£Å´
+ì´ˆê¸°ì— frontì™€ rearëŠ” -1ì„ ê°€ë¥´í‚´
 
-<<¿øÇüÅ¥
-Ç×»ó front´Â ºñ¾îÀÖ¾î¾ß ÇÔ
+<<ì›í˜•í
+í•­ìƒ frontëŠ” ë¹„ì–´ìžˆì–´ì•¼ í•¨
 
-* Enqueue ¸í·É½Ã(data»ðÀÔ½Ã) FULLÀÎÁö È®ÀÎÇÏ´Â ÀýÂ÷ ÇÊ¿ä
-   (r+1) % MAX_SIZE = f ÀÌ¸é °ªÀ» ³ÖÀ» ¼ö ¾øÀ½ (Queue FULL ¹ß»ý)
+* Enqueue ëª…ë ¹ì‹œ(dataì‚½ìž…ì‹œ) FULLì¸ì§€ í™•ì¸í•˜ëŠ” ì ˆì°¨ í•„ìš”
+   (rear+1) % MAX_SIZE = front ì´ë©´ ê°’ì„ ë„£ì„ ìˆ˜ ì—†ìŒ (Queue FULL ë°œìƒ)
 -queue overflow
-* Dequeue ¸í·É½Ã(dataÁ¦°Å) (f==r)ÀÌ¸é (Queue EMPTY ¹ß»ý)
+* Dequeue ëª…ë ¹ì‹œ(dataì œê±°) (front==rear)ì´ë©´ (Queue EMPTY ë°œìƒ)
 
 -queue underflow
-°ø¹é»óÅÂ : front == rear
-Æ÷È­»óÅÂ : front % M == (rear+1)%M
-°ø¹é»óÅÂ¿Í Æ÷È­»óÅÂ¸¦ ±¸º°ÇÏ±â À§ÇØ ÇÏ³ªÀÇ °ø°£Àº Ç×»ó ºñ¿öµÒ
-
-full?
-head=0ÀÌ°í tail=sizeÀÎ »óÅÂ.(head_front==tail_rear%size)
-underflow?
-front==rear
+ê³µë°±ìƒíƒœ : front == rear
+í¬í™”ìƒíƒœ : front % MAX_SIZE == (rear+1) % MAX_SIZE
+ê³µë°±ìƒíƒœì™€ í¬í™”ìƒíƒœë¥¼ êµ¬ë³„í•˜ê¸° ìœ„í•´ í•˜ë‚˜ì˜ ê³µê°„ì€ í•­ìƒ ë¹„ì›Œë‘ 
